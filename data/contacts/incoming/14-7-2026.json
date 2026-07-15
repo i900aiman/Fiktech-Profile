@@ -1,0 +1,28 @@
+[
+    {
+        "id": "93c358a2-d4c2-4dae-b48e-f20513196300",
+        "submitted_at": "2026-07-14T10:06:45+08:00",
+        "full_name": "muhd aiman",
+        "email": "i900aiman@gmail.com",
+        "phone": "+60186673843",
+        "company_name": "sayur sdn bhd",
+        "subject": "nak buat website",
+        "service": "Custom Web Application",
+        "message": "sendut lalalalala hensem",
+        "consent": true,
+        "status": "new"
+    },
+    {
+        "id": "b1b5b37b-97c4-47ed-91ac-758d84272685",
+        "submitted_at": "2026-07-14T10:11:51+08:00",
+        "full_name": "dsds",
+        "email": "dssds@g.com",
+        "phone": "0210321321",
+        "company_name": "dsdsdsd",
+        "subject": "dsdsdsds",
+        "service": "Mobile Application Development",
+        "message": "dsdsdsdsdsdsdsdsds",
+        "consent": true,
+        "status": "new"
+    }
+]
