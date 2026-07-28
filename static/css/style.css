@@ -633,6 +633,14 @@ header.scrolled .navbar-container {
     padding: 0;
 }
 
+.portfolio-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Use 'contain' if it's a logo, or 'cover' for full photo backgrounds */
+    display: block;
+}
+
 .portfolio-img {
     height: 220px;
     background-color: #1a1a1a;

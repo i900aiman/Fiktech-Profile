@@ -69,30 +69,30 @@ function initMobileMenu() {
  */
 const PORTFOLIO_DATA = {
     "proj-1": {
-        title: "E-Commerce Web Portal",
-        category: "Website",
-        desc: "Sistem e-dagang berprestasi tinggi yang dibangunkan untuk perniagaan runcit tempatan. Menyokong pembayaran automatik menerusi FPX, pengurusan inventori secara real-time, dan dashboard jualan lengkap.",
+        title: "Jodoh Murni",
+        category: "Web Application",
+        desc: "Jodoh Murni adalah aplikasi untuk mencari Jodoh seperti Monogami dan Poligami",
         tech: ["HTML5", "CSS3", "JavaScript", "Python Flask", "Tailwind CSS"],
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+        image: "/static/images/JodohMurni.png"
     },
     "proj-2": {
-        title: "SaaS HR Management System",
+        title: "9Hours HR Management System",
         category: "Web Application",
         desc: "Aplikasi berasaskan awan untuk pengurusan sumber manusia. Membantu syarikat menguruskan profil pekerja, merekod kehadiran melalui pengecaman wajah secara digital, tuntutan claim, dan kelulusan cuti.",
         tech: ["React.js", "Flask API", "PostgreSQL", "Tailwind CSS", "Docker"],
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/static/images/9hours_logo.jpeg"
     },
     "proj-3": {
         title: "Corporate Network Infrastructure",
-        category: "Networking",
-        desc: "Penyusunan semula dan menaik taraf infrastruktur rangkaian pejabat korporat bertingkat. Melibatkan pemasangan Cisco switches, router, penyediaan VLAN yang selamat, firewall perlindungan, dan liputan WiFi 6.",
+        category: "Web Application",
+        desc: "Sistem surau yang memberikan perkhidmatan seperi Khairat Kematian.",
         tech: ["Cisco Switches", "VLAN Segmentation", "Fortigate Firewall", "WLAN Controller"],
-        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
+        image: "/static/images/saderi_logo.jpeg"
     },
     "proj-4": {
-        title: "Hybrid Cloud Migration Project",
-        category: "Networking",
-        desc: "Migrasi pangkalan data fizikal syarikat ke persekitaran AWS Hybrid Cloud. Mengurangkan kos penyelenggaraan perkakasan lokal sebanyak 40% dan meningkatkan kebolehsediaan data sehingga 99.99%.",
+        title: "Ejaraah",
+        category: "Web Application",
+        desc: "Sistem surau yang memberikan perkhidmatan seperi Khairat Kematian.",
         tech: ["Amazon Web Services", "EC2", "RDS", "AWS S3", "VPN Gateway"],
         image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=800&q=80"
     },

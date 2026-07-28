@@ -32,75 +32,63 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Responsive Grid -->
         <div class="portfolio-grid">
             
-            <!-- Project 1 -->
-            <div class="portfolio-item" data-category="Website" data-id="proj-1">
-                <div class="glass-card portfolio-card">
-                    <div class="portfolio-img">
-                        <div class="portfolio-img-placeholder">
-                            <i class="fas fa-cart-shopping"></i>
-                            <span style="font-family: var(--font-heading); font-size: 0.8rem;">E-Commerce Web Portal</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-cat">Website</span>
-                        <h3>E-Commerce Web Portal</h3>
-                        <p>Sistem e-dagang berprestasi tinggi lengkap dengan FPX payment gateway dan sistem stok automatik.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">HTML5</span>
-                            <span class="portfolio-tag">CSS3</span>
-                            <span class="portfolio-tag">JavaScript</span>
-                            <span class="portfolio-tag">Python Flask</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
-            <!-- Project 2 -->
-            <div class="portfolio-item" data-category="Web Application" data-id="proj-2">
-                <div class="glass-card portfolio-card">
-                    <div class="portfolio-img">
-                        <div class="portfolio-img-placeholder">
-                            <i class="fas fa-users-rectangle"></i>
-                            <span style="font-family: var(--font-heading); font-size: 0.8rem;">SaaS HR Management System</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-cat">Web Application</span>
-                        <h3>SaaS HR Management System</h3>
-                        <p>Aplikasi awan untuk merekod kehadiran wajah secara digital, tuntutan (claims), dan urusan cuti pekerja.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">React.js</span>
-                            <span class="portfolio-tag">Flask API</span>
-                            <span class="portfolio-tag">PostgreSQL</span>
-                        </div>
-                    </div>
+    <!-- Project 1 -->
+    <div class="portfolio-item show" data-category="Networking" data-id="proj-1" style="display: block;">
+        <div class="glass-card portfolio-card">
+            <div class="portfolio-img">
+                <img src="/static/images/JodohMurni.png" alt="Jodoh Murni" class="portfolio-card-img">
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-cat">Web Application</span>
+                <h3>Jodoh Murni</h3>
+                <p>Jodoh Murni adalah aplikasi untuk mencari Jodoh seperti Monogami dan Poligami</p>
+                <div class="portfolio-tags">
+                    <span class="portfolio-tag">Cisco Switches</span>
+                    <span class="portfolio-tag">Firewall</span>
                 </div>
             </div>
-            
-            <!-- Project 3 -->
-            <div class="portfolio-item" data-category="Networking" data-id="proj-3">
-                <div class="glass-card portfolio-card">
-                    <div class="portfolio-img">
-                        <div class="portfolio-img-placeholder">
-                            <i class="fas fa-route"></i>
-                            <span style="font-family: var(--font-heading); font-size: 0.8rem;">Corporate Network Infrastructure</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <span class="portfolio-cat">Networking</span>
-                        <h3>Corporate Network Infrastructure</h3>
-                        <p>Penyusunan rangkaian pejabat korporat bertingkat lengkap dengan Cisco hardware, router dan firewall.</p>
-                        <div class="portfolio-tags">
-                            <span class="portfolio-tag">Cisco Switches</span>
-                            <span class="portfolio-tag">VLAN Segmentation</span>
-                            <span class="portfolio-tag">Fortigate Firewall</span>
-                        </div>
-                    </div>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-item show" data-category="Web Application" data-id="proj-2" style="display: block;">
+        <div class="glass-card portfolio-card">
+            <div class="portfolio-img">
+                <img src="/static/images/9hours_logo.jpeg" alt="9 Hours" class="portfolio-card-img">
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-cat">Web Application</span>
+                <h3>9Hours HR Management System</h3>
+                <p>Aplikasi awan untuk merekod kehadiran staff secara digital, claim, dan urusan cuti pekerja.</p>
+                <div class="portfolio-tags">
+                    <span class="portfolio-tag">React.js</span>
+                    <span class="portfolio-tag">Flask API</span>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="portfolio-item show" data-category="Web Application" data-id="proj-3" style="display: block;">
+        <div class="glass-card portfolio-card">
+            <div class="portfolio-img">
+                <img src="/static/images/saderi_logo.jpeg" alt="Ejaraah" class="portfolio-card-img">
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-cat">Web Application</span>
+                <h3>Ejaraah</h3>
+                <p>Sistem surau yang memberikan perkhidmatan seperi Khairat Kematian.</p>
+                <div class="portfolio-tags">
+                    <span class="portfolio-tag">React.js</span>
+                    <span class="portfolio-tag">Flask API</span>
+                </div>
+            </div>
+        </div>
+    </div>
             
             <!-- Project 4 -->
-            <div class="portfolio-item" data-category="Networking" data-id="proj-4">
+            <!-- <div class="portfolio-item" data-category="Networking" data-id="proj-4">
                 <div class="glass-card portfolio-card">
                     <div class="portfolio-img">
                         <div class="portfolio-img-placeholder">
@@ -119,10 +107,10 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <!-- Project 5 -->
-            <div class="portfolio-item" data-category="IT Support" data-id="proj-5">
+            <!-- <div class="portfolio-item" data-category="IT Support" data-id="proj-5">
                 <div class="glass-card portfolio-card">
                     <div class="portfolio-img">
                         <div class="portfolio-img-placeholder">
@@ -141,10 +129,10 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <!-- Project 6 -->
-            <div class="portfolio-item" data-category="IT Support" data-id="proj-6">
+            <!-- <div class="portfolio-item" data-category="IT Support" data-id="proj-6">
                 <div class="glass-card portfolio-card">
                     <div class="portfolio-img">
                         <div class="portfolio-img-placeholder">
@@ -162,7 +150,7 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
         </div>
     </div>

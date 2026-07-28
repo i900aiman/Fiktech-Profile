@@ -30,7 +30,7 @@ require_once __DIR__ . '/includes/header.php';
                     <i class="fas fa-map-location-dot"></i>
                     <div class="info-text">
                         <h4>Alamat Pejabat</h4>
-                        <p>Level 15, Tech Tower, Cyberjaya, 63000, Selangor, Malaysia</p>
+                        <p>No. 2, Jalan Saderi P16, Presint 16, 62150, Putrajaya</p>
                     </div>
                 </div>
                 
@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/header.php';
                     <i class="fas fa-phone-volume"></i>
                     <div class="info-text">
                         <h4>Nombor Telefon</h4>
-                        <p>Talian Am: +60 3-8888 1234<br>Bantuan IT: +60 3-8888 5678</p>
+                        <p>Mohd Ameer Fikry (BA): +613-5805761<br>Aiman (Developer): +618-6673843</p>
                     </div>
                 </div>
                 
@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header.php';
                     <i class="fas fa-envelope-open-text"></i>
                     <div class="info-text">
                         <h4>Email Rasmi</h4>
-                        <p>info@fiktech.com.my<br>support@fiktech.com.my</p>
+                        <p>fiktechsolutions@gmail.com</p>
                     </div>
                 </div>
                 

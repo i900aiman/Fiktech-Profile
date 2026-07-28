@@ -41,9 +41,9 @@
             
             <div class="footer-col">
                 <h4>Hubungi Kami</h4>
-                <p><i class="fas fa-map-marker-alt text-gold" style="margin-right: 8px;"></i> Level 15, Tech Tower, Cyberjaya, Selangor, Malaysia</p>
-                <p><i class="fas fa-phone text-gold" style="margin-right: 8px;"></i> +60 3-8888 1234</p>
-                <p><i class="fas fa-envelope text-gold" style="margin-right: 8px;"></i> info@fiktech.com.my</p>
+                <p><i class="fas fa-map-marker-alt text-gold" style="margin-right: 8px;"></i> No. 2, Jalan Saderi P16, Presint 16, 62150, Putrajaya</p>
+                <p><i class="fas fa-phone text-gold" style="margin-right: 8px;"></i>+6013-5805761/<br>+6018-6673843</p>
+                <p><i class="fas fa-envelope text-gold" style="margin-right: 8px;"></i>fiktechsolutions<br>@gmail.com</p>
             </div>
         </div>
         
