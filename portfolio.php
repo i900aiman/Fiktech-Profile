@@ -23,10 +23,8 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Category Filters -->
         <div class="portfolio-filters">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="Website">Website</button>
             <button class="filter-btn" data-filter="Web Application">Web Application</button>
-            <button class="filter-btn" data-filter="Networking">Networking</button>
-            <button class="filter-btn" data-filter="IT Support">IT Support</button>
+            <button class="filter-btn" data-filter="Produk Kami">Produk Kami</button>
         </div>
         
         <!-- Responsive Grid -->
@@ -34,7 +32,7 @@ require_once __DIR__ . '/includes/header.php';
             
             
     <!-- Project 1 -->
-    <div class="portfolio-item show" data-category="Networking" data-id="proj-1" style="display: block;">
+    <div class="portfolio-item show" data-category="Web Application" data-id="proj-1">
         <div class="glass-card portfolio-card">
             <div class="portfolio-img">
                 <img src="/static/images/JodohMurni.png" alt="Jodoh Murni" class="portfolio-card-img">
@@ -52,7 +50,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 
     <!-- Project 2 -->
-    <div class="portfolio-item show" data-category="Web Application" data-id="proj-2" style="display: block;">
+    <div class="portfolio-item show" data-category="Web Application" data-id="proj-2">
         <div class="glass-card portfolio-card">
             <div class="portfolio-img">
                 <img src="/static/images/9hours_logo.jpeg" alt="9 Hours" class="portfolio-card-img">
@@ -70,7 +68,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 
     <!-- Project 3 -->
-    <div class="portfolio-item show" data-category="Web Application" data-id="proj-3" style="display: block;">
+    <div class="portfolio-item show" data-category="Web Application" data-id="proj-3">
         <div class="glass-card portfolio-card">
             <div class="portfolio-img">
                 <img src="/static/images/saderi_logo.jpeg" alt="Ejaraah" class="portfolio-card-img">
@@ -86,9 +84,46 @@ require_once __DIR__ . '/includes/header.php';
             </div>
         </div>
     </div>
+
+     <!-- Project 4 -->
+    <div class="portfolio-item show" data-category="Produk Kami" data-id="proj-4">
+        <div class="glass-card portfolio-card">
+            <div class="portfolio-img">
+                <img src="/static/images/kms_logo.jpeg" alt="Ejaraah" class="portfolio-card-img">
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-cat">Web Application</span>
+                <h3>Kelas Mengaji Saderi</h3>
+                <p>Sistem pengurusan mengaji bagi memudahkan pengajaran</p>
+                <div class="portfolio-tags">
+                    <span class="portfolio-tag">React.js</span>
+                    <span class="portfolio-tag">Flask API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+
+     <!-- Project 5 -->
+    <div class="portfolio-item show" data-category="Produk Kami" data-id="proj-5">
+        <div class="glass-card portfolio-card">
+            <div class="portfolio-img">
+                <img src="/static/images/atk_logo.jpeg" alt="Ejaraah" class="portfolio-card-img">
+            </div>
+            <div class="portfolio-info">
+                <span class="portfolio-cat">Web Application</span>
+                <h3>Akademi Tarung Kalimah</h3>
+                <p>Sistem pengurusan silat</p>
+                <div class="portfolio-tags">
+                    <span class="portfolio-tag">React.js</span>
+                    <span class="portfolio-tag">Flask API</span>
+                </div>
+            </div>
+        </div>
+    </div>
             
             <!-- Project 4 -->
-            <!-- <div class="portfolio-item" data-category="Networking" data-id="proj-4">
+            <!-- <div class="portfolio-item" data-category="Web Application" data-id="proj-4">
                 <div class="glass-card portfolio-card">
                     <div class="portfolio-img">
                         <div class="portfolio-img-placeholder">

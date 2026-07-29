@@ -34,8 +34,6 @@
                 <ul>
                     <li><a href="services.php">Web Development</a></li>
                     <li><a href="services.php">IT Support & Maintenance</a></li>
-                    <li><a href="services.php">Cloud Solutions</a></li>
-                    <li><a href="services.php">Cybersecurity</a></li>
                 </ul>
             </div>
             

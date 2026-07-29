@@ -41,7 +41,9 @@ $activePage = isset($activePage) ? $activePage : 'home';
         <div class="container navbar-container">
             <div class="logo">
                 <a href="index.php">
-                    <i class="fa-solid fa-microchip" style="margin-right: 10px; font-size: 1.5rem;"></i>FIKTECH
+                <!-- <img src="static/images/fiktech_logo2.jpeg" alt="FIKTECH Logo" style="margin-right: 10px; height: 30px; vertical-align: middle;">FIKTECH -->
+                                <img src="static/images/fiktech_logo.png" alt="FIKTECH Logo" style="height: 70px; vertical-align: middle; margin-right: 10px;">FIKTECH
+
                 </a>
             </div>
             

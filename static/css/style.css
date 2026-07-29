@@ -1457,3 +1457,27 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+.visit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color, #fbbf24);
+    color: var(--bg-dark, #0a0a0a);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    transition: all 0.3s ease;
+}
+
+.visit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+}
+
+.visit-btn i {
+    font-size: 0.9rem;
+}

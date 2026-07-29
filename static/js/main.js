@@ -73,35 +73,40 @@ const PORTFOLIO_DATA = {
         category: "Web Application",
         desc: "Jodoh Murni adalah aplikasi untuk mencari Jodoh seperti Monogami dan Poligami",
         tech: ["HTML5", "CSS3", "JavaScript", "Python Flask", "Tailwind CSS"],
-        image: "/static/images/JodohMurni.png"
+        image: "/static/images/JodohMurni.png",
+        url: "https://jodohmurni.com"
     },
     "proj-2": {
         title: "9Hours HR Management System",
         category: "Web Application",
         desc: "Aplikasi berasaskan awan untuk pengurusan sumber manusia. Membantu syarikat menguruskan profil pekerja, merekod kehadiran melalui pengecaman wajah secara digital, tuntutan claim, dan kelulusan cuti.",
         tech: ["React.js", "Flask API", "PostgreSQL", "Tailwind CSS", "Docker"],
-        image: "/static/images/9hours_logo.jpeg"
+        image: "/static/images/9hours_logo.jpeg",
+        url: "https://9hours.my"
     },
     "proj-3": {
-        title: "Corporate Network Infrastructure",
+        title: "Ejaarah",
         category: "Web Application",
         desc: "Sistem surau yang memberikan perkhidmatan seperi Khairat Kematian.",
         tech: ["Cisco Switches", "VLAN Segmentation", "Fortigate Firewall", "WLAN Controller"],
-        image: "/static/images/saderi_logo.jpeg"
+        image: "/static/images/saderi_logo.jpeg",
+        url: "https://ejaarah.my"
     },
     "proj-4": {
-        title: "Ejaraah",
+        title: "Kelas Mengaji Saderi",
         category: "Web Application",
         desc: "Sistem surau yang memberikan perkhidmatan seperi Khairat Kematian.",
         tech: ["Amazon Web Services", "EC2", "RDS", "AWS S3", "VPN Gateway"],
-        image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=800&q=80"
+        image: "/static/images/kms_logo.jpeg",
+            // Tak letak url = button tak akan muncul
     },
     "proj-5": {
-        title: "Continuous IT Support & Desk",
-        category: "IT Support",
+        title: "Akademi Tarung Kalimah",
+        category: "Web Application",
         desc: "Outsourcing bantuan IT harian untuk syarikat logistik antarabangsa dengan lebih 150 staf. Memastikan pemulihan perkakasan pantas, bantuan teknikal dalam masa nyata, dan pematuhan patch keselamatan berkala.",
         tech: ["SLA Monitoring", "Active Directory", "MDM Management", "Remote Support"],
-        image: "https://images.unsplash.com/photo-1600132806608-231446b2e7af?auto=format&fit=crop&w=800&q=80"
+        image: "/static/images/atk_logo.jpeg",
+        url: "https://ejaarah.my"
     },
     "proj-6": {
         title: "Corporate Security Audit & Hardening",
@@ -116,6 +121,7 @@ function initPortfolio() {
     const filters = document.querySelectorAll('.filter-btn');
     const items = document.querySelectorAll('.portfolio-item');
     const modal = document.getElementById('portfolio-modal');
+    const visitBtn = modal.querySelector('.visit-btn');
     
     if (filters.length === 0 && items.length === 0) return;
 
@@ -162,6 +168,68 @@ function initPortfolio() {
             if (catEl) catEl.textContent = data.category;
             if (descEl) descEl.textContent = data.desc;
             if (imgEl) imgEl.src = data.image;
+
+            if (data.url) {
+    // Check if button already exists, if yes remove it
+    const existingBtn = modal.querySelector('.visit-btn-container');
+    if (existingBtn) {
+        existingBtn.remove();
+    }
+    
+    // Create button container
+    const btnContainer = document.createElement('div');
+    btnContainer.className = 'visit-btn-container';
+    btnContainer.style.cssText = 'margin-top: 2rem;';
+    
+    // Create button/link element
+    const visitLink = document.createElement('a');
+    visitLink.href = data.url;
+    visitLink.target = '_blank';
+    visitLink.rel = 'noopener noreferrer';
+    visitLink.className = 'visit-btn';
+    visitLink.style.cssText = `
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: #fbbf24;
+        color: #0a0a0a;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-family: var(--font-heading);
+        transition: all 0.3s ease;
+    `;
+    visitLink.onmouseover = function() {
+        this.style.transform = 'translateY(-2px)';
+        this.style.boxShadow = '0 4px 12px rgba(251, 191, 36, 0.4)';
+    };
+    visitLink.onmouseout = function() {
+        this.style.transform = 'none';
+        this.style.boxShadow = 'none';
+    };
+    
+    // Create icon (optional - guna FontAwesome)
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-external-link-alt';
+    icon.style.fontSize = '0.9rem';
+    
+    // Create text
+    const text = document.createElement('span');
+    text.textContent = 'Visit Website';
+    
+    // Append icon and text to link
+    visitLink.appendChild(icon);
+    visitLink.appendChild(text);
+    
+    // Append link to container
+    btnContainer.appendChild(visitLink);
+    
+    // Append container to modal body (desc element parent)
+    if (descEl && descEl.parentNode) {
+        descEl.parentNode.appendChild(btnContainer);
+    }
+}
             
             if (techEl) {
                 techEl.innerHTML = '';

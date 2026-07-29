@@ -165,7 +165,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="portfolio-grid">
 
     <!-- Project 1 -->
-    <div class="portfolio-item show" data-category="Networking" data-id="proj-1" style="display: block;">
+    <div class="portfolio-item show" data-category="Web Application" data-id="proj-1" style="display: block;">
         <div class="glass-card portfolio-card">
             <div class="portfolio-img">
                 <img src="/static/images/JodohMurni.png" alt="Jodoh Murni" class="portfolio-card-img">
