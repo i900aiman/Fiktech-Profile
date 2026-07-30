@@ -99,6 +99,13 @@ const PORTFOLIO_DATA = {
         tech: ["Amazon Web Services", "EC2", "RDS", "AWS S3", "VPN Gateway"],
         image: "/static/images/kms_logo.jpeg",
             // Tak letak url = button tak akan muncul
+              url: "https://ejaarah.my",
+          social: {  // TAMBAH INI
+            youtube: "https://www.youtube.com/@KelasMengajiSaderiOfficial",
+            tiktok: "https://www.tiktok.com/@kelasmengajisaderi",
+            facebook: "https://www.facebook.com/kelasmengajisaderi/",
+            instagram: "https://www.instagram.com/kelasmengajisaderi/"
+        }
     },
     "proj-5": {
         title: "Akademi Tarung Kalimah",
@@ -106,7 +113,13 @@ const PORTFOLIO_DATA = {
         desc: "Outsourcing bantuan IT harian untuk syarikat logistik antarabangsa dengan lebih 150 staf. Memastikan pemulihan perkakasan pantas, bantuan teknikal dalam masa nyata, dan pematuhan patch keselamatan berkala.",
         tech: ["SLA Monitoring", "Active Directory", "MDM Management", "Remote Support"],
         image: "/static/images/atk_logo.jpeg",
-        url: "https://ejaarah.my"
+        url: "https://ejaarah.my",
+          social: {  // TAMBAH INI
+            youtube: "https://youtube.com/@atkputrajaya?si=R3cABv201NTsD98z",
+            tiktok: "https://www.tiktok.com/@atkputrajaya?_t=ZS-8z72JxScdxx&_r=1",
+            facebook: "https://www.facebook.com/profile.php?id=100092595534188&mibextid=avESrC",
+            instagram: "https://www.instagram.com/atkputrajaya?igsh=MWxuZnMwZncxbjk4cA%3D%3D&utm_source=qr"
+        }
     },
     "proj-6": {
         title: "Corporate Security Audit & Hardening",
@@ -169,6 +182,8 @@ function initPortfolio() {
             if (descEl) descEl.textContent = data.desc;
             if (imgEl) imgEl.src = data.image;
 
+
+            // NAK BUAT BUTTON REDIRECT
             if (data.url) {
     // Check if button already exists, if yes remove it
     const existingBtn = modal.querySelector('.visit-btn-container');
@@ -228,6 +243,105 @@ function initPortfolio() {
     // Append container to modal body (desc element parent)
     if (descEl && descEl.parentNode) {
         descEl.parentNode.appendChild(btnContainer);
+    }
+}
+
+// TAMBAH CODE INI - Create social media icons secara dinamik
+if (data.social && Object.keys(data.social).length > 0) {
+    // Check if social container already exists
+    const existingSocial = modal.querySelector('.social-media-container');
+    if (existingSocial) {
+        existingSocial.remove();
+    }
+    
+    // Create social media container
+    const socialContainer = document.createElement('div');
+    socialContainer.className = 'social-media-container';
+    socialContainer.style.cssText = `
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-start;
+    `;
+    
+    // Define social media platforms
+    const socialPlatforms = {
+        youtube: {
+            icon: 'fab fa-youtube',
+            color: '#FF0000',
+            hoverColor: '#CC0000',
+            label: 'YouTube'
+        },
+        tiktok: {
+            icon: 'fab fa-tiktok',
+            color: '#141a16',
+            hoverColor: '#128C7E',
+            label: 'Tiktok'
+        },
+        facebook: {
+            icon: 'fab fa-facebook',
+            color: '#1877F2',
+            hoverColor: '#0D5F9E',
+            label: 'Facebook'
+        },
+         instagram: {
+            icon: 'fab fa-instagram',
+            color: '#a40c74',
+            hoverColor: '#f146a1',
+            label: 'Instagram'
+        }
+    };
+    
+    // Create icons for each platform
+    Object.keys(socialPlatforms).forEach(platform => {
+        if (data.social[platform]) {
+            const platformData = socialPlatforms[platform];
+            
+            const socialLink = document.createElement('a');
+            socialLink.href = data.social[platform];
+            socialLink.target = '_blank';
+            socialLink.rel = 'noopener noreferrer';
+            socialLink.className = `social-icon ${platform}`;
+            socialLink.setAttribute('aria-label', platformData.label);
+            socialLink.style.cssText = `
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
+                background: ${platformData.color};
+                color: white;
+                border-radius: 50%;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                font-size: 1.3rem;
+            `;
+            
+            // Hover effect
+            socialLink.onmouseover = function() {
+                this.style.transform = 'translateY(-3px)';
+                this.style.boxShadow = `0 4px 12px ${platformData.color}66`;
+                this.style.background = platformData.hoverColor;
+            };
+            
+            socialLink.onmouseout = function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+                this.style.background = platformData.color;
+            };
+            
+            // Create icon element
+            const icon = document.createElement('i');
+            icon.className = platformData.icon;
+            
+            socialLink.appendChild(icon);
+            socialContainer.appendChild(socialLink);
+        }
+    });
+    
+    // Append social container to modal
+    if (descEl && descEl.parentNode) {
+        descEl.parentNode.appendChild(socialContainer);
     }
 }
             
